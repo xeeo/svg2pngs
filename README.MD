@@ -19,13 +19,11 @@ Let's assume you have a project with multiple *.svg files in multiple sub-folder
 ```sh
 app
   ├── images
-  │   ├── Image1.svg
-  │   └── Image2.svg
+  │   └── Image1.svg
   └── main-images
       ├── small-images
-      │   └── Image3.svg
-      ├── Image4.svg
-      └── Image5.svg
+      │   └── Image2.svg
+      └── Image3.svg
 ```
 
 You have to cd into the main folder and run the following command:
@@ -43,12 +41,19 @@ The end result would be something like this:
 app
   ├── images
   │   ├── Image1.svg
-  │   └── Image2.svg
+  │   ├── Image1.png
+  │   ├── Image1@2x.png
+  │   └── Image1@3x.png
   └── main-images
       ├── small-images
-      │   └── Image3.svg
-      ├── Image4.svg
-      └── Image5.svg
+      │   ├── Image2.svg
+      │   ├── Image2.png
+      │   ├── Image2@2x.png
+      │   └── Image2@3x.png
+      ├── Image3.svg
+      ├── Image3.png
+      ├── Image3@2x.png
+      └── Image3@3x.png
 ```
 
 Enjoy !
