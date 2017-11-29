@@ -1,6 +1,6 @@
 {
     "name": "svg2pngs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A command-line tool for converting SVG to PNG in multiple resolutions (@1x @2x @3x)",
     "main": "index.js",
     "bin": {
