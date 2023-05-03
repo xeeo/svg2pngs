@@ -14,12 +14,11 @@ function renderPrettyDate(uglyDate) {
 
 function parseDimension(dimensionValue, dimensionName, directoryName, imageName) {
     const dimensionAsString = dimensionValue;
+    const dimensionAsInt = parseInt(dimensionAsString)
 
-    if (!dimensionAsString.endsWith("px")) {
+    if (!dimensionAsString.endsWith("px") && ("" + dimensionAsInt) !== dimensionAsString) {
         throw new Error(dimensionName + " must end with px, but it rather is: " + dimensionAsString);
     }
-
-    const dimensionAsInt = parseInt(dimensionAsString)
 
     if (dimensionAsInt == NaN) {
         throw new Error(dimensionName + " must be integer, but it rather is: " + dimensionAsString);
